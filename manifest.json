@@ -1,0 +1,16 @@
+{
+    "name": "LoveFilm IMDB ratings",
+    "version": "1.0",
+    "manifest_version": 1,
+    "description": "Load IMDB ratings into LoveFilm listing pages",
+    "content_scripts": [
+        {
+            "matches": ["http://www.lovefilm.com/browse/film/watch-online/*"],
+            "js": ["jquery.js", "main.js"]
+        }
+    ],
+    "permissions": [
+        "http://www.lovefilm.com/browse/film/watch-online/*",
+        "http://www.imdbapi.com/*"
+    ]
+}
