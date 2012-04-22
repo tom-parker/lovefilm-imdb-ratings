@@ -26,7 +26,10 @@ $(function(){
         success: function(obj){
           //render results into page
           var data = $.parseJSON(obj);
-          $(that).find('h2').append(' <a style="color:#f0f;" href="http://www.imdb.com/title/'+data.ID+'">'+data.Rating+'</a><span style="font-size:0.8em;"> - '+data.Votes+'</span>');
+          //Check for undefined data
+          if('ID' in data){
+            $(that).find('h2').append(' <a style="color:#f0f;" href="http://www.imdb.com/title/'+data.ID+'">'+data.Rating+'</a><span style="font-size:0.8em;"> - '+data.Votes+'</span>');
+          }
         }
       });
     }
