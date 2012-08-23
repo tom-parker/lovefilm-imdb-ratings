@@ -11,6 +11,6 @@
     ],
     "permissions": [
         "http://www.lovefilm.com/browse/film/watch-online/*",
-        "http://www.imdbapi.com/*"
+        "http://www.deanclatworthy.com/imdb/*"
     ]
 }
